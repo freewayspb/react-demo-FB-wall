@@ -4,6 +4,7 @@ import { hot } from 'react-hot-loader';
 
 //Componnts
 import Feed from '../../components/Feed';
+import { Provider } from '../../components/HOC/withProfile';
 
 //Instruments
 import avatar from '../../theme/assets/lisa.png';
@@ -17,7 +18,9 @@ const options = {
 export default class App extends Component {
     render() {
         return (
-            <Feed { ...options } />
+            <Provider value = { options }>
+                <Feed />
+            </Provider>
         );
     }
 }
