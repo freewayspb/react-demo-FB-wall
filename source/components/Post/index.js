@@ -4,11 +4,12 @@ import moment from 'moment';
 
 //Instruments
 import avatarImg from '../../theme/assets/lisa.png';
+import Styles from './styles.m.css';
 
 export default class Post extends Component {
     render() {
         return (
-            <section>
+            <section className = { Styles.post }>
                 <img
                     alt = 'avatar'
                     src = { avatarImg }

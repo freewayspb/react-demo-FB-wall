@@ -3,11 +3,12 @@ import React, { Component } from 'react';
 
 //Instruments
 import avatarImg from '../../theme/assets/lisa.png';
+import Styles from './styles.m.css';
 
 export default class Composer extends Component {
     render() {
         return (
-            <section>
+            <section className = { Styles.composer }>
                 <img
                     alt = 'avatar'
                     src = { avatarImg }
